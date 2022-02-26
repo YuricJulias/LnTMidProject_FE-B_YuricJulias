@@ -1,0 +1,174 @@
+/* #eae7dc */
+/* #e85a4f */
+/* #e98074 */
+/* #2a1b3d */
+/* #40CEE8 */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #eae7dc;
+}
+
+
+/* ------ Navbar ------ */
+
+.container{
+    width: 90%;
+    padding: 0 5%;
+    z-index: 1;
+}
+
+.logo{
+    width: 76px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+.logo:hover{
+    background-color: #eae7dc;
+}
+
+.navbar{
+    background-color: #e85a4f;
+    height: 12vh;
+    border-bottom: 8px solid;
+    border-color: #e98074;
+    transition: 0.5s;
+}
+
+ul{
+    list-style-type: none;
+    width: 100%;
+    height: 30%;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #40CEE8;
+    
+    font-weight: bold;
+    font-size: 17px;
+    width: auto;
+    display: inline-block;
+    padding-left: 30px;
+
+}
+
+.align{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navLink li a{
+    transition: color .5s;
+}
+
+.navLink li a:hover{
+    color: #eae7dc;
+}
+
+/* ------ End ------ */
+
+/* ------ About Me ------ */
+
+.About{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    width: 98%;
+    
+}
+
+.container1{
+    display: flex;
+    width: 40%;
+    padding: 1.3rem;
+    flex-direction: column;
+    background-color: #e8594f;
+    border-radius: 15px 50px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    
+}
+
+.textbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #40CEE8;
+    background-color: #2a1b3d;
+    font-size: 25px;
+    border-radius: 15px 50px 15px 0px;
+    width: 90%;
+    height: 3rem;
+    margin-bottom: 1.4rem;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    animation: slide-right 0.5s linear infinite alternate both;
+   
+}
+
+@keyframes slide-right {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(30px);
+    }
+}
+
+.list-L{
+    display: flex;
+    
+}
+
+/* ---Foto--- */
+.FotoDiri img{
+    width: 20rem;
+    height: 23rem;
+    border: solid;
+}
+
+.FotoDiri img:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes shake {
+    0% { 
+        transform: translate(1px, 1px) rotate(0deg); 
+    }
+    
+    25% { 
+        transform: translate(-3px, 0px) rotate(1deg); 
+    }
+
+    50% { 
+        transform: translate(-1px, 2px) rotate(-1deg); 
+    }
+    
+    75% { transform: translate(3px, 1px) rotate(1deg); 
+    }
+    
+    100% { 
+        transform: translate(1px, -2px) rotate(-1deg); 
+    }
+}
+/* ------ End ------ */
+
+
